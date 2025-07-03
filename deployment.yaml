@@ -16,6 +16,9 @@ spec:
         - name: register-app
           image: sonali1897/register-app-pipeline:latest
           resources:
+            requests:
+              memory: "128Mi"
+              cpu: "250m"
             limits:
               memory: "256Mi"
               cpu: "500m"
